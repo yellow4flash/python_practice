@@ -5,5 +5,6 @@ git add . // agregas todos los archivos al repositorio
 git status //muestra el estado del repositorio
 git commit -m "first commit"
 git branch -M main
+// el comando git remote se ejecuta solo una vez
 git remote add origin https://github.com/yellow4flash/python_practice.git
 git push -u origin main
