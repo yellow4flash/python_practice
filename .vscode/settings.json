@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./modules/packages/packages",
+        "./packages/packages"
+    ]
+}

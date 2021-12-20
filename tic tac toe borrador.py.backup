@@ -1,0 +1,80 @@
+# enter move before
+def moveUser():
+    if inputSpace == 1:
+        if(board[0][0]=='X' or board[0][0] =='O'):
+            print('EL lugar está ocupado, escoja otro.')
+            return EnterMove(board)
+        else:
+            board[0][0]='O'
+            DrawMove(board)
+    elif inputSpace==2:
+        if(board[0][1]=='X' or board[0][1] =='O'):
+            print('EL lugar está ocupado, escoja otro.')
+            return EnterMove(board)
+        else:
+            board[0][1]='O'
+            DrawMove(board)
+    elif inputSpace==3:
+        board[0][2]='O'
+    elif inputSpace==4:
+        board[1][0]='O'
+    elif inputSpace==5:
+        print('El lugar está ocupado, escoja otro.')
+        return EnterMove(board)
+    elif inputSpace==6:
+        board[1][2]='O'
+    elif inputSpace==7:
+        board[2][0]='O'
+    elif inputSpace==8:
+        board[2][1]='O'
+    elif inputSpace==9:
+        board[2][2]='O'
+    else:
+        print('Opción no válida')
+        return EnterMove(board)
+def DrawMove():
+    if inputSpace == 1:
+        if(board[0][0]=='X' or board[0][0] =='O'):
+            return DrawMove(board)
+        else:
+            board[0][0]='X'
+    elif inputSpace==2:
+        if(board[0][1]=='X' or board[0][1] =='O'):
+            return DrawMove(board)
+        else:
+            board[0][1]='X'
+    elif inputSpace==3:
+        if(board[0][2]=='X' or board[0][2] =='O'):
+            return DrawMove(board)
+        else:
+            board[0][2]='X'
+    elif inputSpace==4:
+        if(board[1][0]=='X' or board[1][0] =='O'):
+            return DrawMove(board)
+        else:
+            board[1][0]='X'
+    elif inputSpace==5:
+        return DrawMove(board)
+    elif inputSpace==6:
+        if(board[1][2]=='X' or board[1][2] =='O'):
+            return DrawMove(board)
+        else:
+            board[1][2]='X'
+    elif inputSpace==7:
+        if(board[2][0]=='X' or board[2][0] =='O'):
+            return DrawMove(board)
+        else:
+            board[2][0]='X'
+    elif inputSpace==8:
+        if(board[2][1]=='X' or board[2][1] =='O'):
+            return DrawMove(board)
+        else:
+            board[2][1]='X'
+    elif inputSpace==9:
+        if(board[2][2]=='X' or board[2][2] =='O'):
+            return DrawMove(board)
+        else:
+            board[2][2]='X'
+    else:
+        print('Opción no válida')
+        return DrawMove(board)
